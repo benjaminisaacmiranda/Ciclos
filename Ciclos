@@ -5,13 +5,13 @@ public class Ciclos {
     public void ciclo1() {
         char respuesta;
         do {
-            System.out.print("Ingrese la medida en centímetros: ");
+            System.out.print("Ingrese la medida en centimetros: ");
             int medida = scanner.nextInt();
             int kilometros = medida / 100000;
             int metros = (medida % 100000) / 100;
             int centimetros = (medida % 100000) % 100;
             System.out.println(medida + " centímetros son " + kilometros + " kilómetros, " + metros + " metros y " + centimetros + " centímetros.");
-            System.out.print("¿Quiere calcular nuevamente para otras medidas? (S/N): ");
+            System.out.print("¿Desea calcular nuevamente para otras medidas? (Si o No): ");
             respuesta = scanner.next().charAt(0);
         } while (respuesta == 'S' || respuesta == 's');
     }
@@ -31,19 +31,19 @@ public class Ciclos {
             suma += i;
             i++;
         }
-        System.out.println("La suma de los números del 1 al 10 es: " + suma);
+        System.out.println("La suma de los numeros del 1 al 10 es: " + suma);
     }
     public void ciclo4() {
         char respuesta;
         do {
-            System.out.print("Ingrese un número: ");
+            System.out.print("Ingrese un numero: ");
             int numero = scanner.nextInt();
             if (numero % 2 == 0) {
-                System.out.println("El número ingresado es par.");
+                System.out.println("El número ingresado es par");
             } else {
-                System.out.println("El número ingresado es impar.");
+                System.out.println("El número ingresado es impar");
             }
-            System.out.print("¿Quiere ingresar otro número? (S/N): ");
+            System.out.print("¿Quiere ingresar otro número? (Si o No): ");
             respuesta = scanner.next().charAt(0);
         } while (respuesta == 'S' || respuesta == 's');
     }
@@ -54,7 +54,7 @@ public class Ciclos {
             suma += scanner.nextDouble();
         }
         double promedio = suma / 30;
-        System.out.println("El promedio de los 30 números ingresados es: " + promedio);
+        System.out.println("El promedio es " + promedio);
     }
     public void ciclo6() {
         int i = 2;
@@ -71,20 +71,20 @@ public class Ciclos {
             suma += i;
             i += 2;
         }
-        System.out.println("La suma de los números impares del 1 al 400 es: " + suma);
+        System.out.println("La suma de impares desde el 1 al 400 es: " + suma);
     }
     public void ciclo8() {
         char respuesta;
         do {
-            System.out.print("Ingrese el radio del círculo: ");
+            System.out.print("Ingrese el radio del circulo: ");
             double radio = scanner.nextDouble();
             if (radio <= 0) {
-                System.out.println("El radio debe ser un número positivo.");
+                System.out.println("El radio debe ser un número positivo");
             } else {
                 double area = Math.PI * radio * radio;
                 System.out.println("El área del círculo es: " + area);
             }
-            System.out.print("¿Quiere ejecutar nuevamente el programa? (S/N): ");
+            System.out.print("¿Desea otro radio? (Si o No): ");
             respuesta = scanner.next().charAt(0);
         } while (respuesta == 'S' || respuesta == 's');
     }
@@ -94,12 +94,12 @@ public class Ciclos {
             System.out.print("Ingrese el radio del círculo: ");
             double radio = scanner.nextDouble();
             if (radio <= 0) {
-                System.out.println("El radio debe ser un número positivo.");
+                System.out.println("El radio debe ser un número positivo");
             } else {
                 double perimetro = 2 * Math.PI * radio;
                 System.out.println("El perímetro del círculo es: " + perimetro);
             }
-            System.out.print("¿Quiere ejecutar nuevamente el programa? (S/N): ");
+            System.out.print("¿Desea ingresar otro radio? (Si o No): ");
             respuesta = scanner.next().charAt(0);
         } while (respuesta == 'S' || respuesta == 's');
     }
@@ -111,12 +111,12 @@ public class Ciclos {
             System.out.print("Ingrese la altura del rectángulo: ");
             double altura = scanner.nextDouble();
             if (base <= 0 || altura <= 0) {
-                System.out.println("Tanto la base como la altura deben ser números positivos.");
+                System.out.println("Base y altura deben ser positivos");
             } else {
                 double area = base * altura;
                 System.out.println("El área del rectángulo es: " + area);
             }
-            System.out.print("¿Quiere calcular nuevamente el área para otras medidas? (S/N): ");
+            System.out.print("¿Quiere calcular nuevamente el área para otras medidas? (Si o No): ");
             respuesta = scanner.next().charAt(0);
         } while (respuesta == 'S' || respuesta == 's');
     }
