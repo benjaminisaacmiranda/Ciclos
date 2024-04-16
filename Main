@@ -1,0 +1,105 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Ciclos ciclos = new Ciclos();
+        Scanner scanner = new Scanner(System.in);
+        int opcion;
+
+        do {
+            System.out.println("//////////////BIENVENIDA, QUE DESEA HACER EL DIA DE HOY////////////");
+            System.out.println("1) Convertir medida de centimetros a metros y kilometros");
+            System.out.println("2) Imprimir números del 1 al 10");
+            System.out.println("3) Sumar números desde el 1 al 10");
+            System.out.println("4) Verificar si un número es par o impar");
+            System.out.println("5) Calcular promedio de 30 números");
+            System.out.println("6) Imprimir números pares del 1 al 20");
+            System.out.println("7) Sumar números impares del 1 al 400");
+            System.out.println("8) Calcular área de un círculo");
+            System.out.println("9) Calcular perímetro de un círculo");
+            System.out.println("10) Calcular área de un rectángulo");
+            System.out.println("11) Calcular volumen de una esfera");
+            System.out.println("12) Calcular área y perímetro de un cubo");
+            System.out.println("13) Imprimir números del 1 al 100, sin múltiplos de 3");
+            System.out.println("14) Imprimir números del 1 al 100, sin múltiplos de 5");
+            System.out.println("15) Imprimir números del 1 al 100, sin múltiplos de 3 y 5");
+            System.out.println("16) Imprimir números del 1 al 100, reemplazando múltiplos de 3 por 'Cuek'");
+            System.out.println("17) Calcular factorial de un número");
+            System.out.println("18) Contar la cantidad de dígitos de un número");
+            System.out.println("19) Calcular área y perímetro de un cuadrado");
+            System.out.println("20) Calcular potencia de un número");
+            System.out.println("0) Salir");
+
+            opcion = scanner.nextInt();
+
+            switch (opcion) {
+                case 1:
+                    ciclos.ciclo1();
+                    break;
+                case 2:
+                    ciclos.ciclo2();
+                    break;
+                case 3:
+                    ciclos.ciclo3();
+                    break;
+                case 4:
+                    ciclos.ciclo4();
+                    break;
+                case 5:
+                    ciclos.ciclo5();
+                    break;
+                case 6:
+                    ciclos.ciclo6();
+                    break;
+                case 7:
+                    ciclos.ciclo7();
+                    break;
+                case 8:
+                    ciclos.ciclo8();
+                    break;
+                case 9:
+                    ciclos.ciclo9();
+                    break;
+                case 10:
+                    ciclos.ciclo10();
+                    break;
+                case 11:
+                    ciclos.ciclo11();
+                    break;
+                case 12:
+                    ciclos.ciclo12();
+                    break;
+                case 13:
+                    ciclos.ciclo13();
+                    break;
+                case 14:
+                    ciclos.ciclo14();
+                    break;
+                case 15:
+                    ciclos.ciclo15();
+                    break;
+                case 16:
+                    ciclos.ciclo16();
+                    break;
+                case 17:
+                    ciclos.ciclo17();
+                    break;
+                case 18:
+                    ciclos.ciclo18();
+                    break;
+                case 19:
+                    ciclos.ciclo19();
+                    break;
+                case 20:
+                    ciclos.ciclo20();
+                    break;
+                case 0:
+                    System.out.println("Gracias por utilizar el programa.");
+                    break;
+                default:
+                    System.out.println("Por favor, eliga otra opción.");
+            }
+        } while (opcion != 0);
+    }
+}
+
